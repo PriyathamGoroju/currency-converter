@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta content='IE=edge'>
-    <title>Page Title</title>
+    <title>Currency Converter</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
@@ -11,23 +11,30 @@
 </head>
 <body>
     <div class="card">
-        <h1>Currency Converter</h1>
-
-        <label for="fromCurrency">From:</label>
-        <select id="fromCurrency"></select>
-        <div id="flagContainerFrom"></div>
-
-        <label for="toCurrency">To:</label>
-        <select id="toCurrency"></select>
-        <div id="flagContainerTo"></div>
-        <div class="amountCard">
-            <label for="amount">Amount:</label>
-            <input type="number" id="amount" />
-            <button id="convert">Convert</button>
+        <h2>Currency Converter</h2>
+        <div class="conversion-box">
+            <div class="input-group">
+                <label for="fromCurrency">From </label>
+                <div class="select-container">
+                    <select id="fromCurrency"></select>
+                    <div class="flagCont" id="flagContainerFrom"></div>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="toCurrency">To </label>
+                <div class="select-container">
+                    <select id="toCurrency"></select>
+                    <div class="flagCont" id="flagContainerTo"></div>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="amount">Amount </label>
+                <input type="number" id="amount" />
+            </div>
         </div>
-
+        <button id="convert">Convert</button>
         <p id="result"></p>
-    </div>
+    </div>    
     <script src="country.js"></script>
     <script src="ref.js"></script>
 </body>

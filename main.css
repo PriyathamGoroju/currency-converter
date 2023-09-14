@@ -1,22 +1,37 @@
 body {
+  height: 100vh;
   font-family: Arial, sans-serif;
   margin: 20px;
   text-align: center;
-}
-
-h1 {
-  color: #333;
-}
-
-label {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(156deg, rgba(2, 0, 36, 1) 0%, rgba(80, 73, 214, 1) 0%, rgba(102, 88, 200, 1) 48%, rgba(0, 212, 255, 1) 100%);
   display: flex;
-  margin-top: 10px;
+  justify-content: center;
 }
 
-select,
-input,
-button {
-    padding:auto;
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fffffff5;
+  border-radius: 5px;
+  box-shadow: #5c9dff 5px 11px 20px 1px;
+  width: 400px;
+  height: 430px;
+  padding: 20px;
+  margin: auto;
+}
+h2{
+  color:rgb(37, 18, 147);
+}
+
+.conversion-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-container select {
+  width: 100%;
 }
 
 button {
@@ -24,21 +39,55 @@ button {
   color: #fff;
   border: none;
   cursor: pointer;
+  margin: 10px;
+  padding: 10px 20px;
+  width: auto;
+  align-self: center;
+  border-radius: 3px;
 }
 
 #result {
   margin-top: 20px;
-  font-weight: bold;
+  height: 50px;
+  margin-bottom:50px;
 }
 
-.card {
+.input-group {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  margin: 20px 100px;
+  margin: 0px 10px;
+  padding:10px;
 }
-.amountCard{
-    display: block;
+
+label {
+  text-align: left;
+  font-size:small;
+}
+
+select{
+  padding: 6px 0px;
+  margin-right: 20px;
+  border-radius: 2px;
+  max-width: 300px;
+}
+
+input{
+  margin-top:7px;
+  padding:6px 0px;
+  border-radius: 2px;
+  border-width: 1px;
+  font-size:medium;
+}
+.select-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flagCont img{
+  height: 40px;
+}
+
+button:hover{
+  background-color:#7724d6;
 }

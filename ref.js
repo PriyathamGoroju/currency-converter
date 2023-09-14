@@ -60,7 +60,7 @@
     function Flag(containerId, currency) {
         const flagContainer = document.getElementById(containerId);
         const flagImg = document.createElement('img');
-        flagImg.src = `https://flagsapi.com/${currencyFlagMap[currency]}/flat/64.png`;
+        flagImg.src = `https://flagsapi.com/${currencyFlagMap[currency]}/flat/32.png`;
         flagImg.alt = `${currency} Flag`;
         flagContainer.innerHTML = `<img src="${flagImg.src}" alt="${flagImg.alt}" />`;
     }
